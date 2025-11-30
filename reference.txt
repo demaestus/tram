@@ -1,0 +1,39 @@
+tram ls -m 0.1.0
+	Shows only issues related to milestone `0.1.0`.
+
+tram ls -c bug
+	Shows only issues related to category `bug`.
+
+tram ls -g vulkan
+	Shows only issues related to group `vulkan`.
+
+tram ls -s o
+	Shows only open issues.
+
+tram list -i
+	List all issues assigned to me. Requires configuration.
+
+tram open -m 0.1.0 -c task -g vulkan -n "Vulkan shader cache keeps refreshing" -e
+
+-e = and open for editing
+-n = name the issue
+
+tram close ffffffff -r
+
+-r = close and delete
+
+tram edit ffffffff -> opens nvim for editing
+
+tram edit ffffffff -m 0.1.0 -c bug -g opengl -n "Changed name of this issue" -e
+
+tram config user.name "demaestus"
+tram config user.email "anything@all.org"
+
+
+subcommands:
+	init
+	list = list
+	open = open issue
+	edit = edit issue
+	close = close issue
+

@@ -1,0 +1,8 @@
+proj_name = "init"
+milestones = []
+groups = []
+tags = ["urgent", ""]
+
+[user]
+name = "Ferko"
+email = "anything@all.org"
